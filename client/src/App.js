@@ -9,10 +9,11 @@ import Login from "./Components/Login";
 import FetchUser from "./Components/FetchUser";
 import ProtectedRoute from './Components/ProtectedRoute';
 import Lander from './Components/Lander';
-
+import Images from './images/Images';
 
 import './App.css';
 import { Container } from 'react-bootstrap';
+
 
 const App = () => (
   <Fragment>
@@ -24,6 +25,7 @@ const App = () => (
       <Switch>
         <ProtectedRoute exact path="/home" component={Home} />
         <ProtectedRoute path="/about" component={About} />
+        <Route path="/images" component={Images} />
         <Route exact path="/" component={Lander} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
